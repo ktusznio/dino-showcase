@@ -1,3 +1,25 @@
+/* header */
+.header {
+  display: flex;
+}
+.header-images-row {
+  display: flex;
+}
+.header-item {
+  align-items: center;
+  display: flex;
+}
+.header-title {
+  align-items: center;
+  display: flex;
+  font-family: monospace;
+  font-size: 2.5em;
+  font-weight: 600;
+  flex: 1;
+  justify-content: center;
+}
+
+/* navigation */
 ul {
   list-style-type: none;
   margin: 0;
