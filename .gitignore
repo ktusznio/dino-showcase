@@ -1,1 +1,5 @@
 .git/*
+.DS_Store
+public/.DS_Store
+public/.vscode/
+public/images/.DS_Store

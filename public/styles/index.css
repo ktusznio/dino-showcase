@@ -1,54 +1,63 @@
-/* header */
-.header {
-  display: flex;
-}
-.header-images-row {
-  display: flex;
-}
-.header-item {
-  align-items: center;
-  display: flex;
-}
-.header-title {
-  align-items: center;
-  display: flex;
-  font-family: monospace;
-  font-size: 2.5em;
-  font-weight: 600;
-  flex: 1;
-  justify-content: center;
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+<style>
+
+
+* {
+  box-sizing: border-box;
 }
 
-/* navigation */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-li {
-  float: left;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-.column {
-  float: ;
-  width: 33.33%;
-  padding: 5px;
-}
-.row {
+body {
+  font-family: 'Muli', sans-serif;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-content: stretch;
+  align-items: flex-start;
+  justify-content:flex-start;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: black;
 }
+
+.container {
+  display: flex;
+  width: 50vw;
+
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-wrap:reverse;
+  height: 60vh;
+  border-radius: 10px;
+  color: pink;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: all 700ms ease-in;
+}
+
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+
+}
+
+
+@media(max-width: 30px){
+    .container{
+        width: 1vw;
+    }
+    .panel:nth-of-type(9), 
+    .panel:nth-of-type(12){
+        display:none;
+    }
+
+}
+
