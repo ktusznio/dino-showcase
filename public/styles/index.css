@@ -8,59 +8,96 @@ body {
   font-family: 'Muli', sans-serif;
   margin: 0;
   background-color: black;
+  background-image: url("../images/words.jpeg")
 }
 
 .panels-container {
-  display: flex;
-  margin: 40px 0;
-  max-width: 1024px;
+
+  display:flex;
+
 }
 
 .panel {
-  background-position: center;
+ 
+  background-position:center;
   background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
+  background-size:cover;
+  border-radius: 50px;
   color: pink;
   cursor: pointer;
   flex-wrap:reverse;
-  flex: 0.75;
-  height: 500px;
-  margin: 10px;
-  position: relative;
+  width: 57%;
+  height: 222px;
+  margin: 15px;
   transition: all 700ms ease-in;
+
 }
 
 .panel.active {
-  flex: 5;
+  width: 100%;
+
 }
 
 .panel:nth-child(1) {
-  background-image: url('../images/black.jpg');
+  background-image: url('../images/angie.jpeg');
 }
 .panel:nth-child(2) {
-  background-image: url('../images/justiceGap.png');
-}
+  background-image: url('../images/kalin.jpeg');
+ }
 .panel:nth-child(3) {
-  background-image: url('../images/pride.jpg');
+  background-image: url('../images/mlk2.jpeg');
 }
 .panel:nth-child(4) {
-  background-image: url('../images/maya.jpg');
+  
+  background-image: url('../images/endMass.jpeg');
 }
 .panel:nth-child(5) {
-  background-image: url('../images/wall.jpeg');
+   background-image: url('../images/rosa-parks.png');
+}
+.panel:nth-child(6) {
+  background-image: url('../images/pride1.jpeg');
+}
+.panel:nth-child(7) {
+  background-image: url('../images/billie.jpeg');
 }
 
-/*
-@media(max-width: 30px) {
-    .container{
-        width: 1vw;
-    }
-    .panel:nth-of-type(9), 
-    .panel:nth-of-type(12){
-        display:none;
-    }
+
+ul {
+ 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.video{
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 853px;
+  
 
 }
-*/
+
 
